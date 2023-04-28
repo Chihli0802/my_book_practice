@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書籍の追加</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- boot -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../all.css">
+</head>
+
+<body>
+    <div class="bd2">
+        <header>
+            <div class="area">
+                <div class="logo">
+                    <div class="page">
+                        <h1>書籍の追加</h1>
+                    </div>
+                </div>
+
+                <div class="add">
+                    <form action="./seller_p1.html">
+                        <input type="submit" value="管理者ページ" class="firstInput text-black" />
+                    </form>
+                </div>
+
+                <div class="search">
+                    <form action="./seller_search.html">
+                        <input type="submit" value="本を探す" class="firstInput text-black" />
+                    </form>
+                </div>
+
+                <div class="update">
+                    <form action="./seller_update.html">
+                        <input type="submit" value="値段,在庫数の更新" class="firstInput text-black" />
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="entry">
+                <div class="info">
+                    <div class="infoleft">
+                        <div class="name form-floating mb-3">
+                            <input id="title" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">書名</label>
+                        </div>
+                        <div class="name form-floating mb-3">
+                            <input id="isbn" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">ISBN</label>
+                        </div>
+                        <div class="name form-floating mb-3">
+                            <input id="writer" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">著者</label>
+                        </div>
+                        <div class="name form-floating mb-3">
+                            <input id="price" type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">価格</label>
+                        </div>
+                    </div>
+
+                    <div class="inforight">
+                        <div class="name form-floating mb-3">
+                            <input id="inventory" type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">在庫</label>
+                        </div>
+                        <div class="name form-floating mb-3">
+                            <input id="salesVolume" type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">売上数</label>
+                        </div>
+                        <div class="name form-floating mb-3">
+                            <input id="category" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">カテゴリー</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnarea">
+                    <button id="no" type="button">削除</button>
+                    <button id="yes" type="button">確認</button>
+                </div>
+            </div>
+
+            <div class="back">
+                <div class="backinfo">
+                    <div id ="mess" class="backinfotext">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="../js/seller_add.js"></script>
+
+</body>
+
+</html>

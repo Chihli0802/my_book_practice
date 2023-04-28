@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本を探す</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- boot -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../all.css">
+</head>
+
+<body>
+
+    <div class="bd3">
+        <header>
+            <div class="area">
+                <div class="logo">
+                    <div class="page">
+                        <h1>本を探す</h1>
+                    </div>
+                </div>
+
+                <div class="add">
+                    <form action="./seller_p1.html">
+                        <input type="submit" value="管理者ページ" class="firstInput text-black" />
+                    </form>
+                </div>
+
+                <div class="search">
+                    <form action="./seller_add.html">
+                        <input type="submit" value="書籍の追加" class="firstInput text-black" />
+                    </form>
+                </div>
+
+                <div class="update">
+                    <form action="./seller_update.html">
+                        <input type="submit" value="値段,在庫数の更新" class="firstInput text-black" />
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="btnarea">
+                <div class="name form-floating mb-3">
+                    <input id="cateInput" type="text" class="form-control" id="floatingInput"
+                        placeholder="name@example.com">
+                    <label for="floatingInput">カテゴリーで</label>
+                </div>
+                <!-- <button type="button">探す</button> -->
+                <!-- Button trigger modal -->
+                <button id="cateBtn" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    探す
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">検索結果</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div id="cateRes" class="modal-body"> 
+                                    <!-- 回應區 -->
+                                     <span id="cateinfo"></span>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="closeBtn" type="button" class="btn" data-bs-dismiss="modal">閉じる</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name form-floating mb-3">
+                    <input id="allInput" type="text" class="form-control" id="floatingInput"
+                        placeholder="name@example.com">
+                    <label for="floatingInput">書名、ISBN、著者で</label>
+                </div>
+                
+                <!-- Button trigger modal -->
+                <button id="allBtn" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    探す
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">検索結果</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div id="allRes" class="modal-body">
+                                <!-- 回應區 -->
+                                <span id="allinfo"></span>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="closeBtnAll" type="button" class="btn" data-bs-dismiss="modal">閉じる</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <!-- js 貼在最底下 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="../js/seller_search.js"></script>
+</body>
+
+</html>

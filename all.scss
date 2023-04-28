@@ -1,0 +1,12 @@
+@import "./node_modules/bootstrap/scss/functions";
+@import "./stylesheet/helpers/variables";
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+@import "./stylesheet/pages/first_page";
+@import "./stylesheet/layout/layout";
+@import "./stylesheet/pages/seller_p1";
+@import "./stylesheet/pages/seller_add";
+@import "./stylesheet/pages/seller_search";
+@import "./stylesheet/pages/seller_update";
+@import "./stylesheet/pages/user_page";

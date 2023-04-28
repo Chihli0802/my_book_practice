@@ -1,0 +1,96 @@
+.bd1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(74, 105, 105);
+    margin: 0 0;
+    padding: 0 0;
+
+    header {
+        padding: 80px 0 0 0;
+
+        .page {
+            text-align: center;
+            padding-top: 25px;
+            background-color: rgba(229, 225, 125, 1);
+            width: 400px;
+            height: 100px;
+            border-radius: 0 10px 10px 0;
+            text-shadow: 5px 5px 6px rgb(32, 72, 72);
+        }
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+
+        .area {
+            height: 100%;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .add {
+
+                width: 100%;
+
+                input {
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 50px;
+                    font-size: 24px;
+                    box-shadow: 12px 12px 16px #12211b;
+                    &:active {
+                        scale: 0.95;
+                    }
+                    &:hover{
+                        background-color:rgba(229, 225, 125, 1) ;
+                        cursor: pointer;   
+                    }
+                }
+            }
+
+            .search {
+                width: 100%;
+
+                input {
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 50px;
+                    font-size: 24px;
+                    box-shadow: 12px 12px 16px #12211b;
+
+                    &:active {
+                        scale: 0.95;
+                    }
+                    &:hover{
+                        background-color:rgba(229, 225, 125, 1) ;
+                        cursor: pointer;   
+                    }
+                }
+            }
+
+            .update {
+                width: 100%;
+
+                input {
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 50px;
+                    font-size: 24px;
+                    box-shadow: 12px 12px 16px #12211b;
+
+                    &:active {
+                        scale: 0.95;
+                    }
+                    &:hover{
+                        background-color:rgba(229, 225, 125, 1) ;
+                        cursor: pointer;   
+                    }
+                }
+            }
+        }
+    }
+}
