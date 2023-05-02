@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>書籍検索</title>
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- boot -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../all.css">
+</head>
+
+<body>
+  <!-- 導覽 -->
+  <nav class="top navbar">
+    <div class="container">
+      <a class="navbar-brand" href="./user_page.html">
+        <img
+          src="https://st3.depositphotos.com/4633569/17204/i/450/depositphotos_172040742-stock-photo-watercolor-tropical-palm-leaves-circle.jpg"
+          alt="" width="55" height="50">
+        <h3>Book Life</h3>
+      </a>
+      <form class="area1 d-flex">
+        <input class="put form-control me-2" type="search" placeholder="looking for..." aria-label="Search">
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- 文字排版 -->
+  <div class="slogan my-5">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p class="h3">A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer h4 my-3">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="areaS">
+    <!-- 列表群組 -->
+    <div class="li">
+      <div class="list-group list-group-flush">
+        <a href="../html/user_page.html"><button type="button"
+            class="list-group-item list-group-item-action">ホームページ</button></a>
+        <a href="./user_search.html"><button type="button"
+            class="list-group-item list-group-item-action">書籍検索</button></a>
+        <a href="./user_buy.html"><button type="button" class="list-group-item list-group-item-action">購入</button></a>
+        <button id="top5Btn" type="button" class="list-group-item list-group-item-action">ランキング</button>
+
+      </div>
+    </div>
+    <!-- 輪播 -->
+    <div id="pic" class="picS">
+      <div class="big">
+        <!-- category -->
+        <div class="cateCheck">
+          <div class="here">
+
+            <div class="cateText">
+              <h3>Category</h3>
+            </div>
+
+            <div class="box">
+              <div class="first">
+                <div class="a">
+                  <input id="fir1" type="checkbox" value="愛情">
+                  <label for="fir1">愛情</label>
+                </div>
+                <div class="b">
+                  <input id="fir2" type="checkbox" value="恐怖">
+                  <label for="fir2">恐怖</label>
+                </div>
+                <div class="c">
+                  <input id="fir3" type="checkbox" value="懸疑">
+                  <label for="fir3">懸疑</label>
+                </div>
+                <div class="d">
+                  <input id="fir4" type="checkbox" value="科幻">
+                  <label for="fir4">科幻</label>
+                </div>
+              </div>
+              <div class="second">
+                <div class="a">
+                  <input id="sec1" type="checkbox" value="心理">
+                  <label for="sec1">心理</label>
+                </div>
+                <div class="b">
+                  <input id="sec2" type="checkbox" value="繪本">
+                  <label for="sec2">繪本</label>
+                </div>
+                <div class="c">
+                  <input id="sec3" type="checkbox" value="虛構">
+                  <label for="sec3">虛構</label>
+                </div>
+                <div class="d">
+                  <input id="sec4" type="checkbox" value="日本">
+                  <label for="sec4">日本</label>
+                </div>
+              </div>
+              <div class="third">
+                <div class="a">
+                  <input id="thir1" type="checkbox">
+                  <label for="thir1">-----</label>
+                </div>
+                <div class="b">
+                  <input id="thir2" type="checkbox">
+                  <label for="thir2">-----</label>
+                </div>
+                <div class="c">
+                  <input id="thir3" type="checkbox">
+                  <label for="thir3">-----</label>
+                </div>
+                <div class="d">
+                  <input id="thir4" type="checkbox">
+                  <label for="thir4">-----</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="btnhere">
+              <button id="btnForCate" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Check</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">検索結果</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="result" class="modal-body">
+                      <!-- 顯示區 -->
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- all choose -->
+        <div class="allInput">
+          <div class="allHere">
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="area3">
+    <!-- 手風琴 -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            もっと見る
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+
+            <!-- 下拉內容 -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>CHIHLI FAMILY</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- js 貼在最底下 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"></script>
+    <script src="../js/user_search.js"></script>
+</body>
+
+</html>

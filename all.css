@@ -11455,19 +11455,483 @@ body {
 }
 .area2 .pic {
   width: 70%;
-  height: 100%;
+  height: auto;
 }
 .area2 .pic .pic1 {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 400px;
 }
 .area2 .pic .pic1 .carousel-inner {
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
 .area2 .pic .pic1 .carousel-inner img {
   width: 100%;
-  height: 399px;
+  height: 400px;
+}
+
+.area3 .accordion .accordion-item h2, .area3 .accordion .accordion-item .h2 {
+  text-align: center;
+}
+.area3 .accordion .accordion-item h2 button, .area3 .accordion .accordion-item .h2 button {
+  background-color: #6d9470;
+  outline: none;
+  box-shadow: none;
+  color: #ffffff;
+}
+.area3 .accordion .accordion-item h2 button:hover, .area3 .accordion .accordion-item .h2 button:hover {
+  background-color: #d0e3d2;
+}
+.area3 .accordion .accordion-item .accordion-body {
+  background-color: #b4cab5;
+  height: 500px;
+}
+
+footer {
+  border-top: 1.5px solid #6d9470;
+  width: 100%;
+  height: 25px;
+  margin: 15px 0 15px 0;
+  text-align: center;
+}
+
+body {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.top {
+  border-bottom: 1.5px solid #6d9470;
+}
+.top .container {
+  margin: 0 20px;
+  width: 100%;
+}
+.top .container a {
+  display: flex;
+}
+.top .container a h3, .top .container a .h3 {
+  margin-left: 15px;
+  margin-top: 10px;
+  color: #6d9470;
+}
+.top .container a h3:hover, .top .container a .h3:hover {
+  color: #8bb98e;
+}
+.top .container .area1 .btn {
+  background-color: #6d9470;
+  border: none;
+  border-radius: 0%;
+  color: #ffffff;
+  outline: none;
+  box-shadow: none;
+}
+.top .container .area1 .btn:active {
+  transform: scale(0.96);
+}
+.top .container .area1 .btn:hover {
+  background-color: #8bb98e;
+  border: none;
+}
+.top .container .area1 .put {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #6d9470;
+}
+
+.areaA {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px auto;
+  height: auto;
+}
+.areaA .li .list-group {
+  display: flex;
+}
+.areaA .li .list-group a {
+  text-decoration: none;
+}
+.areaA .li .list-group a button {
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #aec9af;
+}
+.areaA .li .list-group a button:hover {
+  background-color: #8bb98e;
+  color: #ffffff;
+}
+.areaA .li .list-group a button:active {
+  background-color: #6d9470;
+}
+.areaA .li .list-group button {
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #aec9af;
+}
+.areaA .li .list-group button:hover {
+  background-color: #8bb98e;
+  color: #ffffff;
+}
+.areaA .li .list-group button:active {
+  background-color: #6d9470;
+}
+.areaA .pic {
+  width: 70%;
+  height: 100%;
+}
+.areaA .pic .choose {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: auto;
+}
+.areaA .pic .choose .choo {
+  width: 100%;
+  height: auto;
+}
+.areaA .pic .choose .btnposi {
+  display: block;
+}
+.areaA .pic .choose .btnposi .btncart {
+  background-color: #6d9470;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  margin-top: 30px;
+}
+.areaA .pic .choose .btnposi .btncart:hover {
+  background-color: #8bb98e;
+}
+.areaA .pic .choose .btnposi .btncart:active {
+  transform: scale(0.96);
+}
+.areaA .pic .choose .inCart .inCartBody {
+  border-top: 1.5px solid #6d9470;
+}
+.areaA .pic .choose .inCart .forBtn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 0;
+}
+.areaA .pic .choose .inCart .forBtn button {
+  background-color: #6d9470;
+  border: none;
+  color: #ffffff;
+  padding: 10px;
+}
+.areaA .pic .choose .inCart .forBtn button:hover {
+  background-color: #8bb98e;
+}
+.areaA .pic .choose .inCart .forBtn button:active {
+  transform: scale(0.96);
+}
+
+.area3 .accordion .accordion-item h2, .area3 .accordion .accordion-item .h2 {
+  text-align: center;
+}
+.area3 .accordion .accordion-item h2 button, .area3 .accordion .accordion-item .h2 button {
+  background-color: #6d9470;
+  outline: none;
+  box-shadow: none;
+  color: #ffffff;
+}
+.area3 .accordion .accordion-item h2 button:hover, .area3 .accordion .accordion-item .h2 button:hover {
+  background-color: #d0e3d2;
+}
+.area3 .accordion .accordion-item .accordion-body {
+  background-color: #b4cab5;
+  height: 500px;
+}
+
+footer {
+  border-top: 1.5px solid #6d9470;
+  width: 100%;
+  height: 25px;
+  margin: 15px 0 15px 0;
+  text-align: center;
+}
+
+body {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.top {
+  border-bottom: 1.5px solid #6d9470;
+}
+.top .container {
+  margin: 0 20px;
+  width: 100%;
+}
+.top .container a {
+  display: flex;
+}
+.top .container a h3, .top .container a .h3 {
+  margin-left: 15px;
+  margin-top: 10px;
+  color: #6d9470;
+}
+.top .container a h3:hover, .top .container a .h3:hover {
+  color: #8bb98e;
+}
+.top .container .area1 .btn {
+  background-color: #6d9470;
+  border: none;
+  border-radius: 0%;
+  color: #ffffff;
+  outline: none;
+  box-shadow: none;
+}
+.top .container .area1 .btn:active {
+  transform: scale(0.96);
+}
+.top .container .area1 .btn:hover {
+  background-color: #8bb98e;
+  border: none;
+}
+.top .container .area1 .put {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #6d9470;
+}
+
+.areaS {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px auto;
+}
+.areaS .li .list-group {
+  display: flex;
+}
+.areaS .li .list-group a {
+  text-decoration: none;
+}
+.areaS .li .list-group a button {
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #aec9af;
+}
+.areaS .li .list-group a button:hover {
+  background-color: #8bb98e;
+  color: #ffffff;
+}
+.areaS .li .list-group a button:active {
+  background-color: #6d9470;
+}
+.areaS .li .list-group button {
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #aec9af;
+}
+.areaS .li .list-group button:hover {
+  background-color: #8bb98e;
+  color: #ffffff;
+}
+.areaS .li .list-group button:active {
+  background-color: #6d9470;
+}
+.areaS .picS {
+  width: 70%;
+  height: auto;
+  margin: 50px 0;
+}
+.areaS .picS .big {
+  display: flex;
+}
+.areaS .picS .big .cateCheck .here {
+  width: 400px;
+  height: 300px;
+  border: 3px dotted #6d9470;
+  padding: 12px 0;
+  margin-right: 30px;
+}
+.areaS .picS .big .cateCheck .here .cateText {
+  text-align: center;
+  color: #6d9470;
+}
+.areaS .picS .big .cateCheck .here .cateText:hover {
+  color: #8bb98e;
+}
+.areaS .picS .big .cateCheck .here .box {
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.areaS .picS .big .cateCheck .here .box .first,
+.areaS .picS .big .cateCheck .here .box .second,
+.areaS .picS .big .cateCheck .here .box .third {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.areaS .picS .big .cateCheck .here .box .first .a,
+.areaS .picS .big .cateCheck .here .box .first .b,
+.areaS .picS .big .cateCheck .here .box .first .c,
+.areaS .picS .big .cateCheck .here .box .first .d,
+.areaS .picS .big .cateCheck .here .box .second .a,
+.areaS .picS .big .cateCheck .here .box .second .b,
+.areaS .picS .big .cateCheck .here .box .second .c,
+.areaS .picS .big .cateCheck .here .box .second .d,
+.areaS .picS .big .cateCheck .here .box .third .a,
+.areaS .picS .big .cateCheck .here .box .third .b,
+.areaS .picS .big .cateCheck .here .box .third .c,
+.areaS .picS .big .cateCheck .here .box .third .d {
+  display: flex;
+  align-items: center;
+  background-color: #d0e3d2;
+  padding: 8px 24px;
+}
+.areaS .picS .big .cateCheck .here .box .first .a:hover,
+.areaS .picS .big .cateCheck .here .box .first .b:hover,
+.areaS .picS .big .cateCheck .here .box .first .c:hover,
+.areaS .picS .big .cateCheck .here .box .first .d:hover,
+.areaS .picS .big .cateCheck .here .box .second .a:hover,
+.areaS .picS .big .cateCheck .here .box .second .b:hover,
+.areaS .picS .big .cateCheck .here .box .second .c:hover,
+.areaS .picS .big .cateCheck .here .box .second .d:hover,
+.areaS .picS .big .cateCheck .here .box .third .a:hover,
+.areaS .picS .big .cateCheck .here .box .third .b:hover,
+.areaS .picS .big .cateCheck .here .box .third .c:hover,
+.areaS .picS .big .cateCheck .here .box .third .d:hover {
+  background-color: #6d9470;
+}
+.areaS .picS .big .cateCheck .here .box .first .a label,
+.areaS .picS .big .cateCheck .here .box .first .b label,
+.areaS .picS .big .cateCheck .here .box .first .c label,
+.areaS .picS .big .cateCheck .here .box .first .d label,
+.areaS .picS .big .cateCheck .here .box .second .a label,
+.areaS .picS .big .cateCheck .here .box .second .b label,
+.areaS .picS .big .cateCheck .here .box .second .c label,
+.areaS .picS .big .cateCheck .here .box .second .d label,
+.areaS .picS .big .cateCheck .here .box .third .a label,
+.areaS .picS .big .cateCheck .here .box .third .b label,
+.areaS .picS .big .cateCheck .here .box .third .c label,
+.areaS .picS .big .cateCheck .here .box .third .d label {
+  cursor: pointer;
+  margin-left: 10px;
+  /* 標籤距離checkbox的距離 */
+}
+.areaS .picS .big .cateCheck .here .box .first .a input[type=checkbox],
+.areaS .picS .big .cateCheck .here .box .first .b input[type=checkbox],
+.areaS .picS .big .cateCheck .here .box .first .c input[type=checkbox],
+.areaS .picS .big .cateCheck .here .box .first .d input[type=checkbox],
+.areaS .picS .big .cateCheck .here .box .second .a input[type=checkbox],
+.areaS .picS .big .cateCheck .here .box .second .b input[type=checkbox],
+.areaS .picS .big .cateCheck .here .box .second .c input[type=checkbox],
+.areaS .picS .big .cateCheck .here .box .second .d input[type=checkbox],
+.areaS .picS .big .cateCheck .here .box .third .a input[type=checkbox],
+.areaS .picS .big .cateCheck .here .box .third .b input[type=checkbox],
+.areaS .picS .big .cateCheck .here .box .third .c input[type=checkbox],
+.areaS .picS .big .cateCheck .here .box .third .d input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  background-color: white;
+  /* 未選中時的底色 */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.areaS .picS .big .cateCheck .here .box .first .a input[type=checkbox]:checked:before,
+.areaS .picS .big .cateCheck .here .box .first .b input[type=checkbox]:checked:before,
+.areaS .picS .big .cateCheck .here .box .first .c input[type=checkbox]:checked:before,
+.areaS .picS .big .cateCheck .here .box .first .d input[type=checkbox]:checked:before,
+.areaS .picS .big .cateCheck .here .box .second .a input[type=checkbox]:checked:before,
+.areaS .picS .big .cateCheck .here .box .second .b input[type=checkbox]:checked:before,
+.areaS .picS .big .cateCheck .here .box .second .c input[type=checkbox]:checked:before,
+.areaS .picS .big .cateCheck .here .box .second .d input[type=checkbox]:checked:before,
+.areaS .picS .big .cateCheck .here .box .third .a input[type=checkbox]:checked:before,
+.areaS .picS .big .cateCheck .here .box .third .b input[type=checkbox]:checked:before,
+.areaS .picS .big .cateCheck .here .box .third .c input[type=checkbox]:checked:before,
+.areaS .picS .big .cateCheck .here .box .third .d input[type=checkbox]:checked:before {
+  content: "✔";
+  /* 使用Unicode碼顯示勾勾 */
+  position: absolute;
+  /* 將:before定位到checkbox內部 */
+  top: 50%;
+  /* 上邊距為50% */
+  left: 50%;
+  /* 左邊距為50% */
+  transform: translate(-50%, -50%);
+  /* 將:before水平和垂直居中 */
+  font-size: 12px;
+  /* 設置勾勾的大小 */
+}
+.areaS .picS .big .cateCheck .here .box .first .a input[type=checkbox]:checked,
+.areaS .picS .big .cateCheck .here .box .first .b input[type=checkbox]:checked,
+.areaS .picS .big .cateCheck .here .box .first .c input[type=checkbox]:checked,
+.areaS .picS .big .cateCheck .here .box .first .d input[type=checkbox]:checked,
+.areaS .picS .big .cateCheck .here .box .second .a input[type=checkbox]:checked,
+.areaS .picS .big .cateCheck .here .box .second .b input[type=checkbox]:checked,
+.areaS .picS .big .cateCheck .here .box .second .c input[type=checkbox]:checked,
+.areaS .picS .big .cateCheck .here .box .second .d input[type=checkbox]:checked,
+.areaS .picS .big .cateCheck .here .box .third .a input[type=checkbox]:checked,
+.areaS .picS .big .cateCheck .here .box .third .b input[type=checkbox]:checked,
+.areaS .picS .big .cateCheck .here .box .third .c input[type=checkbox]:checked,
+.areaS .picS .big .cateCheck .here .box .third .d input[type=checkbox]:checked {
+  background-color: #ffffff;
+  /* 選中時的底色 */
+}
+.areaS .picS .big .cateCheck .here .box .first .a input[type=checkbox]:focus,
+.areaS .picS .big .cateCheck .here .box .first .b input[type=checkbox]:focus,
+.areaS .picS .big .cateCheck .here .box .first .c input[type=checkbox]:focus,
+.areaS .picS .big .cateCheck .here .box .first .d input[type=checkbox]:focus,
+.areaS .picS .big .cateCheck .here .box .second .a input[type=checkbox]:focus,
+.areaS .picS .big .cateCheck .here .box .second .b input[type=checkbox]:focus,
+.areaS .picS .big .cateCheck .here .box .second .c input[type=checkbox]:focus,
+.areaS .picS .big .cateCheck .here .box .second .d input[type=checkbox]:focus,
+.areaS .picS .big .cateCheck .here .box .third .a input[type=checkbox]:focus,
+.areaS .picS .big .cateCheck .here .box .third .b input[type=checkbox]:focus,
+.areaS .picS .big .cateCheck .here .box .third .c input[type=checkbox]:focus,
+.areaS .picS .big .cateCheck .here .box .third .d input[type=checkbox]:focus {
+  outline: none;
+  /* 移除focus時的藍色外框 */
+}
+.areaS .picS .big .cateCheck .here .box .first .a label,
+.areaS .picS .big .cateCheck .here .box .first .b label,
+.areaS .picS .big .cateCheck .here .box .first .c label,
+.areaS .picS .big .cateCheck .here .box .first .d label,
+.areaS .picS .big .cateCheck .here .box .second .a label,
+.areaS .picS .big .cateCheck .here .box .second .b label,
+.areaS .picS .big .cateCheck .here .box .second .c label,
+.areaS .picS .big .cateCheck .here .box .second .d label,
+.areaS .picS .big .cateCheck .here .box .third .a label,
+.areaS .picS .big .cateCheck .here .box .third .b label,
+.areaS .picS .big .cateCheck .here .box .third .c label,
+.areaS .picS .big .cateCheck .here .box .third .d label {
+  margin-left: 10px;
+  /* 標籤距離checkbox的距離 */
+}
+.areaS .picS .big .allInput .allHere {
+  width: 400px;
+  height: 300px;
+  background-color: #6d9470;
+  padding: 12px 0;
+}
+.areaS .picS .big .btnhere button {
+  border: 3px dotted #6d9470;
+  background-color: #ffffff;
+  color: #6d9470;
+  margin-top: 10px;
+  margin-left: 165px;
+  outline: none;
+  box-shadow: none;
+}
+.areaS .picS .big .btnhere button:hover {
+  background-color: #8bb98e;
+  color: #ffffff;
+  border: 3px dotted #ffffff;
+}
+.areaS .picS .big .btnhere button:active {
+  transform: scale(0.95);
 }
 
 .area3 .accordion .accordion-item h2, .area3 .accordion .accordion-item .h2 {

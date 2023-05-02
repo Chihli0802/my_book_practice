@@ -56,12 +56,12 @@ body {
 
 }
 
-.area2 {
+.areaA {
     display: flex;
     justify-content: space-around;
     width: 100%;
     margin: 20px auto;
-
+    height: auto;
     .li {
         .list-group {
             display: flex;
@@ -105,20 +105,63 @@ body {
 
     .pic {
         width: 70%;
-        height: auto;
+        height: 100%;
 
-        .pic1 {
-            width: 90%;
-            height: 400px;
-
-            .carousel-inner {
+        .choose{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            height: auto;
+            .choo{
                 width: 100%;
-                height: 400px;
+                height: auto;
+            }
+           .btnposi{
+            display: block;
+            .btncart{
+                background-color: #6d9470;
+                color: #ffffff;
+                border: none;
+                padding: 10px;
+                margin-top: 30px;
+                &:hover{
+                    background-color: #8bb98e;
+                }
+                &:active{
+                    transform: scale(0.96);
+                }
+                
+            }
+           }
+            
 
-                img {
-                    width: 100%;
-                    height: 400px;
+            .inCart{
 
+                .inCartBody{
+                    border-top: 1.5px solid #6d9470;
+                }
+
+                .forBtn{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin: 30px 0;
+                    
+                    button{
+                        background-color: #6d9470;
+                        border: none;
+                        color: #ffffff;
+                        padding: 10px;
+                        &:hover{
+                            background-color: #8bb98e;
+                        }
+                        &:active{
+                            transform: scale(0.96);
+                        }
+                    }
                 }
             }
         }

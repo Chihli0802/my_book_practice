@@ -1,92 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>購入ページ</title>
     <!-- icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-  <!-- boot -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- boot -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../all.css">
 </head>
+
 <body>
     <!-- 導覽 -->
     <nav class="top navbar">
         <div class="container">
-          <a class="navbar-brand" href="./user_page.html">
-            <img src="https://st3.depositphotos.com/4633569/17204/i/450/depositphotos_172040742-stock-photo-watercolor-tropical-palm-leaves-circle.jpg" alt="" width="55" height="50">
-            <h3>Book Life</h3>
-          </a>
-          <form class="area1 d-flex">
-            <input class="put form-control me-2" type="search" placeholder="looking for..." aria-label="Search">
-            <button class="btn" type="submit">Search</button>
-          </form>
+            <a class="navbar-brand" href="./user_page.html">
+                <img src="https://st3.depositphotos.com/4633569/17204/i/450/depositphotos_172040742-stock-photo-watercolor-tropical-palm-leaves-circle.jpg"
+                    alt="" width="55" height="50">
+                <h3>Book Life</h3>
+            </a>
+            <form class="area1 d-flex">
+                <input class="put form-control me-2" type="search" placeholder="looking for..." aria-label="Search">
+                <button class="btn" type="submit">Search</button>
+            </form>
         </div>
     </nav>
 
     <!-- 文字排版 -->
     <div class="slogan my-5">
-      <figure class="text-center">
-        <blockquote class="blockquote">
-          <p class="h3">A well-known quote, contained in a blockquote element.</p>
-        </blockquote>
-        <figcaption class="blockquote-footer h4 my-3">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </figcaption>
-      </figure>
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <p class="h3">A well-known quote, contained in a blockquote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer h4 my-3">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+        </figure>
     </div>
 
-      <div class="area2">
+    <div class="areaA">
         <!-- 列表群組 -->
         <div class="li">
-          <div class="list-group list-group-flush">
-            <a href=""><button  type="button" class="list-group-item list-group-item-action">書籍検索</button></a>
-            <a href=""><button type="button" class="list-group-item list-group-item-action">購入</button></a>
-            <button id="top5Btn" type="button" class="list-group-item list-group-item-action">ランキング</button>
-          </div>
+            <div class="list-group list-group-flush">
+                <a href="../html/user_page.html"><button type="button"
+                        class="list-group-item list-group-item-action">ホームページ</button></a>
+                <a href="./user_search.html"><button type="button"
+                        class="list-group-item list-group-item-action">書籍検索</button></a>
+                <a href=""><button type="button" class="list-group-item list-group-item-action">購入</button></a>
+                <button id="top5Btn" type="button" class="list-group-item list-group-item-action">ランキング</button>
+            </div>
         </div>
-            <!-- 輪播 -->
-        <div id="pic" class="pic">
-          <!-- 購物區 -->
-        </div>
-      </div>
 
-      <div class="area3">
+        <div id="pic" class="pic">
+            <!-- 購物區 =============================================================================-->
+            <div class="choose">
+                <div class="choo form-floating mb-3">
+                    <input id="isbnInput" type="text" class="form-control" id="floatingInput"
+                        placeholder="name@example.com">
+                    <label for="floatingInput">ISBN</label>
+                </div>
+                <div class="choo form-floating mb-3">
+                    <input id="numInput" type="number" class="form-control" id="floatingPassword"
+                        placeholder="Password">
+                    <label for="floatingPassword">数量</label>
+                </div>
+
+                <!-- 加入購物車 =================================================================== -->
+                <div class="btnposi">
+                    <!-- 加入購物車按鈕 -->
+                    <button id="btncart" class="btncart mx-5" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">カートに入れる</button>
+                    <!-- 查看購物車按鈕 -->
+                    <button class="btncart mx-5" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">查看カート</button>
+                </div>
+
+
+                <div class="inCart offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">カート</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div id="inCartBody" class="inCartBody offcanvas-body">
+                        <!-- 購買清單顯示區 -->
+                    </div>
+
+                    <!-- 互動視窗按鈕 -->
+                    <div class="forBtn">
+                        <button class="emBtn" id="emptyBtn" type="button">清空購物車</button>
+                        <button class="bill" id="billBtn" type="button">結帳</button>
+
+                    </div>
+
+                </div>
+                <!-- ============================================================================= -->
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="area3">
         <!-- 手風琴 -->
         <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                もっと見る
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        もっと見る
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
 
-                <!-- 下拉內容 -->
+                        <!-- 下拉內容 -->
 
-              </div>
+                    </div>
+                </div>
             </div>
-          </div>
-      </div>
+        </div>
 
-      <footer>
-        <p>CHIHLI FAMILY</p>
-      </footer>
-
-
-     
-
-    
-      
+        <footer>
+            <p>CHIHLI FAMILY</p>
+        </footer>
 
 
 
@@ -94,10 +143,17 @@
 
 
 
-     <!-- js 貼在最底下 -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-  crossorigin="anonymous"></script>
-  <script src="../js/user_page.js"></script>
+
+
+
+
+
+
+        <!-- js 貼在最底下 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+        <script src="../js/user_buy.js"></script>
 </body>
+
 </html>

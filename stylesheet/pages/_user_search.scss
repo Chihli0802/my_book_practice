@@ -1,0 +1,296 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.top {
+    border-bottom: 1.5px solid #6d9470;
+
+    .container {
+        margin: 0 20px;
+        width: 100%;
+
+        a {
+
+            display: flex;
+
+            h3 {
+                margin-left: 15px;
+                margin-top: 10px;
+                color: #6d9470;
+
+                &:hover {
+                    color: #8bb98e;
+                }
+            }
+        }
+
+        .area1 {
+            .btn {
+                background-color: #6d9470;
+                border: none;
+                border-radius: 0%;
+                color: #ffffff;
+                outline: none;
+                box-shadow: none;
+
+                &:active {
+                    transform: scale(0.96);
+                }
+
+                &:hover {
+                    background-color: #8bb98e;
+                    border: none;
+                }
+            }
+
+            .put {
+                outline: none;
+                box-shadow: none;
+                border: 1px solid #6d9470;
+            }
+        }
+
+
+    }
+
+}
+
+.areaS {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px auto;
+
+    .li {
+        .list-group {
+            display: flex;
+
+            a {
+                text-decoration: none;
+
+                button {
+                    background-color: #ffffff;
+                    border: none;
+                    border-bottom: 1px solid #aec9af;
+
+                    &:hover {
+                        background-color: #8bb98e;
+                        color: #ffffff;
+                    }
+
+                    &:active {
+                        background-color: #6d9470;
+                    }
+                }
+            }
+
+            button {
+                background-color: #ffffff;
+                border: none;
+                border-bottom: 1px solid #aec9af;
+
+                &:hover {
+                    background-color: #8bb98e;
+                    color: #ffffff;
+                }
+
+                &:active {
+                    background-color: #6d9470;
+                }
+            }
+
+
+
+        }
+
+    }
+
+    .picS {
+        width: 70%;
+        height: auto;
+        // display: flex;
+        margin: 50px 0;
+
+        .big {
+            display: flex;
+
+            .cateCheck {
+
+                .here {
+                    width: 400px;
+                    height: 300px;
+                    border: 3px dotted #6d9470;
+                    padding: 12px 0;
+                    margin-right: 30px;
+
+                    .cateText {
+                        text-align: center;
+                        color: #6d9470;
+
+                        &:hover {
+                            color: #8bb98e;
+                        }
+                    }
+
+                    .box {
+                        height: 80%;
+                        display: flex;
+                        justify-content: space-around;
+
+                        .first,
+                        .second,
+                        .third {
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+
+                            .a,
+                            .b,
+                            .c,
+                            .d {
+                                display: flex;
+                                align-items: center;
+                                background-color: #d0e3d2;
+                                padding: 8px 24px;
+
+                                &:hover {
+                                    background-color: #6d9470;
+                                }
+
+                                label {
+                                    cursor: pointer;
+                                    margin-left: 10px;
+                                    /* 標籤距離checkbox的距離 */
+                                }
+
+                                input[type="checkbox"] {
+                                    appearance: none;
+                                    position: relative;
+                                    background-color: white;
+                                    /* 未選中時的底色 */
+                                    border-radius: 50%;
+                                    width: 20px;
+                                    height: 20px;
+                                }
+
+                                input[type="checkbox"]:checked:before {
+                                    content: "\2714";
+                                    /* 使用Unicode碼顯示勾勾 */
+                                    position: absolute;
+                                    /* 將:before定位到checkbox內部 */
+                                    top: 50%;
+                                    /* 上邊距為50% */
+                                    left: 50%;
+                                    /* 左邊距為50% */
+                                    transform: translate(-50%, -50%);
+                                    /* 將:before水平和垂直居中 */
+                                    font-size: 12px;
+                                    /* 設置勾勾的大小 */
+
+
+                                }
+
+                                input[type="checkbox"]:checked {
+                                    background-color: #ffffff;
+                                    /* 選中時的底色 */
+                                }
+
+                                input[type="checkbox"]:focus {
+                                    outline: none;
+                                    /* 移除focus時的藍色外框 */
+                                }
+
+                                label {
+                                    margin-left: 10px;
+                                    /* 標籤距離checkbox的距離 */
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .allInput {
+
+                .allHere {
+                    width: 400px;
+                    height: 300px;
+                    background-color: #6d9470;
+                    padding: 12px 0;
+                }
+            }
+
+            .btnhere {
+                button {
+                    border: 3px dotted #6d9470;
+                    background-color: #ffffff;
+                    color: #6d9470;
+                    margin-top: 10px;
+                    margin-left: 165px;
+                    outline: none;
+                    box-shadow: none;
+
+                    &:hover {
+                        background-color: #8bb98e;
+                        color: #ffffff;
+                        border: 3px dotted #ffffff;
+                    }
+
+                    &:active {
+                        transform: scale(0.95);
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+}
+
+.area3 {
+
+    .accordion {
+        .accordion-item {
+            h2 {
+                text-align: center;
+
+                button {
+                    background-color: #6d9470;
+                    outline: none;
+                    box-shadow: none;
+                    color: #ffffff;
+
+                    &:hover {
+                        background-color: #d0e3d2;
+                    }
+
+                }
+
+            }
+
+            .accordion-body {
+                background-color: #b4cab5;
+                height: 500px;
+            }
+
+
+        }
+
+    }
+}
+
+footer {
+    border-top: 1.5px solid #6d9470;
+    width: 100%;
+    height: 25px;
+    margin: 15px 0 15px 0;
+    text-align: center;
+
+
+}

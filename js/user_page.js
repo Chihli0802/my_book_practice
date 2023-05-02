@@ -12,7 +12,7 @@ top5Btn.addEventListener("click", function () {
         })
         .then(function (data) {
             console.log(data);
-
+         
             for (let n = 0; n < 5; n++) {         
                 pic.append(`Top ${n + 1}`)
                 pic.append(document.createElement("br"))
@@ -25,6 +25,7 @@ top5Btn.addEventListener("click", function () {
                 pic.append(`価格:  ${data.bookList[n].price}`)
                 pic.append(document.createElement("hr"))
             }
+            
 
 
         })
@@ -37,3 +38,5 @@ top5Btn.addEventListener("click", function () {
 
 
 })
+
+
